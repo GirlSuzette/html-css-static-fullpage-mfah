@@ -11,30 +11,42 @@ h5{
 }
 
  h1 {
+    font-size: 40px;
     padding: 17px 8px;
     margin: 0;
 }
+h2{
+    font-size: 36px;
+}
 
 h3{
+    padding-top: 39px;
+    padding-bottom: 37px;
     margin: 0;
-    font-size: 15PX;
+    font-size: 30px;
+}
+h4{
+    margin: 0;
 }
 span{
-    color: #DB4B38;
+    color: #fff;
 }
 input{
     width: 79%;
     height: 24px;
+    margin-top: 16px;
     margin-left: 8px;
     margin-right: 0;
 }
 button{
     height: 24px;
     margin-right: 0;
+    margin-top: 16px;
 }
-.todo{
+.container{
     background-color: #eee;
     padding: 0 25px 25px 25px;
+    padding-bottom: 0;
     position: relative;
 }
 .logo {
@@ -109,33 +121,27 @@ a {
     background-color: #fff;
 }
 .aside{
-    display: flex;
-    flex-direction: column;
-    padding-right: 10px;
-    flex: 1;
+    width: 22%;
 }
-
-.item-aside{
-    display: flex;
+h5.aside-name{
+    color: #3599f5;
 }
 .aside-img{
-    margin: 4px 9px;
+    padding-right: 7%;
+    padding-bottom: 6px;
 }
-
-.aside-text{
-    font-size: 11px;
-    width: 40%;
+.aside h5 {
+    font-size: 10px;
+    margin-top: 0;
+    margin-bottom: 10px;
 }
-.aside-azul{
-    color: #04A7EA;
+h5.aside-events {
+    color: gray;
 }
-.aside-grey{
-    color: #AEAEAF;
+h5.name {
+    color: #3599f5;
 }
-.container{
-    display: flex;
-    background-color: #fff;
-}
+ 
 .grid{
 display: flex;
 flex-wrap: wrap;
@@ -169,6 +175,9 @@ width: 77%;
 }
 .fa-red{
    color: #DB4B38;
+   margin-left: 10px;
+   margin-top: 10px;
+}
 }
 .off{
     display: flex;
@@ -178,29 +187,73 @@ width: 77%;
 }
 
 footer{
-    background-color: #fff; 
+    background-color: #eee;
+    padding: 0 25px 25px 25px;
 }
-.footer-text{
+.footer-text {
     display: flex;
     font-size: 11px;
-    margin-left: 29px;
-    margin-right: 100px;
-    padding-bottom: 37px;
     justify-content: space-between;
+    background: #fff;
+    padding: 10px;
+}
+nav.footer-text div {
+    width: 25%;
+    text-align: center;
 }
 
+.items-container {
+    display: flex;
+    background: #fff;
+}
 
-@media all and (max-width: 762px) {
+.item-aside {
+    padding-left: 10px;
+}
+
+h5.aside-events {
+    margin: 0;
+}
+
+.item-aside {
+    display: flex;
+}
+.item-campus {
+    padding-right: 15px;
+}
+.item-school {
+    padding-left: 15px;
+}
+
+@media only screen and (max-width: 768px) {
     .grid{
         flex-direction: column;
     }
-
-    .menu {
-        flex-direction: column;
-    }
-    .item-menu{
+    .items-container{
         flex-wrap: wrap;
-        flex-direction: column;
+    }
+    .grid{
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    h1{
+        font-size: 25px;
+    }
+
+    h2 { 
+        font-size: 20px
+    }
+    h3{
+        font-size: 20px;
+    }
+    p{
+        font-size: 12px;
+    }
+
+    .item-menu{
+        display: block;
+        margin-bottom: 0;
     }
     .school {
         flex-direction: column-reverse;
@@ -218,24 +271,28 @@ footer{
     footer {
         flex-direction: column;
     }
+
+    .firex-icon{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .item-fired{
+        color:white;
+    }
     
     .off {
         display: none;
     }
-}
 
-/* @media all and (max-width: 650px){
-    .off{
+    .item-logo-2{
         display: none;
     }
-    .nav a{
-        font-size: 25px;
+    .aside{
+        flex-direction: column;
+        width: 100%;
+    }
+    .fixed{
+        display: none;
     }
 }
-
-@media all and (max-width: 400px) {
-    .aside {
-        flex-direction: column;
-    }
-} 
-  */
